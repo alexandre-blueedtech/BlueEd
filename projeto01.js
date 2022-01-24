@@ -7,9 +7,12 @@ console.log();
 let nome = prompt("Primeiro, me fala seu nome: ");
 console.log();
 let senha = prompt(nome + " que nome lindo, bom agora vamos criar sua senha de hóspede, ela deve ter mais de 3 caracteres, pode começar: ");
-while (senha.length <= 3) {
+while (senha.length < 3) {
+  console.log();
   console.log("Erro 04");
+  console.log();
   console.log("Sua senha deve ter mais de três caracteres");
+  console.log();
   senha = prompt("Digite sua senha de hóspede: ");
 }
 console.clear();
@@ -17,17 +20,19 @@ console.log("Pronto para entar");
 console.log()
 let LoginSenha = prompt("Digite sua senha novamente: ");
 while (LoginSenha != senha) {
+  console.log();
   console.log("Acessando...");
-  console.log()
+  console.log();
   console.log("Erro 05");
-  console.log()
+  console.log();
   console.log("Você errou sua senha!");
-  console.log()
+  console.log();
   let erro = +prompt("Começe de novo!");
   LoginSenha = prompt("Digite sua senha de hóspede: ");
 }
-console.log()
+console.log();
 console.log("Entramos!");
+
 
 console.log()
 let enter1 = prompt("Pressione ENTER...");
@@ -62,6 +67,7 @@ if(quest01.toLowerCase() == "sim" ||
   console.log("É isso aí, bem-preparado, vamos lá!");
   positivo = positivo + 1;
 } else {
+  console.clear();
   console.log("Isso com toda certeza foi um erro!");
 }
 
@@ -81,6 +87,7 @@ if (
   console.log("Que bom para você, além de gentil ela é mortal, é bom ser querido por ela!");
   positivo = positivo + 1;
 } else {
+  console.clear();
   console.log("Cuidado amigo, muito cuidado, além de gentil ela é mortal, seria bom ser amigo dela!");
 }
 
@@ -100,6 +107,7 @@ if (
   console.log("Honesto como Tio Monroe, que Deus o tenha, aposto que você brincou de xerife né!");
   positivo = positivo + 1;
 } else {
+  console.clear();
   console.log("Você se divertiu bastante sendo um fora da lei né, mas isso pode ter consequências sérias!");
 }
 
@@ -108,6 +116,7 @@ let enter5 = prompt("Pressione ENTER...");
 console.clear();
 
 console.log("Em suas andanças por WestWorld você encontrou nosso campo de caças, são tantos animais, alguns até extintos!")
+console.log();
 let quest04 = prompt("Você caçou algum animal? ");
 if (
   quest04.toLowerCase() == "não" ||
@@ -118,6 +127,7 @@ if (
   console.log("Você é um dos poucos que optam por não desfrutar desse “esporte”, admirável!");
   positivo = positivo + 1;
 } else {
+  console.clear();
   console.log("Os animais também são anfitriões, não sei se eles vão gostar muito disso!");
 }
 
@@ -137,6 +147,7 @@ if (
   console.log("Você tem bom coração cavalheiro!");
   positivo = positivo + 1;
 } else {
+  console.clear();
   console.log("Cruel e sádico, acho que você vai se dar mal.");
 }
 
@@ -145,20 +156,15 @@ let enter7 = prompt("Pressione ENTER...");
 console.clear();
 
 if (positivo == 5) {
-  console.log("------------------------------");
-  console.log(`Você foi um bom Cowboy meu amigo, nenhum anfitrião vai se revoltar contra você, parabéns, você pode voltar em paz para sua casa!`);
+  console.log("Você foi um bom Cowboy meu amigo, nenhum anfitrião vai se revoltar contra você, parabéns, você pode voltar em paz para sua casa!");
 } else if (positivo == 4) {
-  console.log("--------------------------------|||");
-  console.log(`Olha, você vai se divertir muito e dominar West World, mas pode perder um dedo no caminho!`);
+  console.log("Olha, você vai se divertir muito e dominar West World, mas pode perder um dedo no caminho!");
 } else if (positivo == 3) {
-  console.log(`Você morreu meu amigo, quem mandou desagradar os anfitriões!`);
+  console.log("Você morreu meu amigo, quem mandou desagradar os anfitriões!");
 }
-
 if (positivo == 2 || positivo == 1) {
-  console.log(`-------------------------------`);
   console.log(`Você vai sofrer muito meu caro amigo, mas vão deixar você viver, afinal voce sofrerá sempre que se lembrar do que fizeram com você!`);
 }
 if (positivo == 0) {
-  console.log(`---------------FINAL----------------`);
-  console.log(`Meu amigo, você vai ser o primeiro a morrer!`);
+  console.log("Meu amigo, você vai ser o primeiro a morrer!");
 }
